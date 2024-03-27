@@ -76,6 +76,20 @@ header {
   width: 100%;
   color: #fff;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-light {
+  background-color: rgb(250, 251, 252);
+  color: rgb(41, 45, 51);
+}
+
+.navbar-light .logo-light-path {
+  fill: rgb(41, 45, 51);
+}
+
+.navbar-light .header-logo {
+  border-color: rgb(235, 235, 240);
 }
 
 .header-logo {
