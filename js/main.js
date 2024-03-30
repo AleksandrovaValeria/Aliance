@@ -1,8 +1,11 @@
 const navbar = document.querySelector(".navbar");
+const navbar_logo = navbar.querySelector(".navbar-logo use");
 window.addEventListener("scroll", () => {
   if (this.scrollY > 1) {
     navbar.classList.add("navbar-light");
+    navbar_logo.href.baseVal = "img/sprite.svg#logo-dark";
   } else {
     navbar.classList.remove("navbar-light");
+    navbar_logo.href.baseVal = "img/sprite.svg#logo-light";
   }
 });

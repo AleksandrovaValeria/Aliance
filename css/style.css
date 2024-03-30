@@ -84,10 +84,6 @@ header {
   color: rgb(41, 45, 51);
 }
 
-.navbar-light .logo-light-path {
-  fill: rgb(41, 45, 51);
-}
-
 .navbar-light .header-logo {
   border-color: rgb(235, 235, 240);
 }
@@ -95,6 +91,11 @@ header {
 .header-logo {
   padding: 23px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
+  transition: padding 0.2s;
+}
+
+.navbar-light .header-logo {
+  padding: 15px 50px;
 }
 
 .header-nav {
@@ -199,6 +200,7 @@ section {
   font-size: 60px;
   line-height: 1.2;
   color: rgb(41, 45, 51);
+  margin: 30px 0 50px;
 }
 
 .steps {
