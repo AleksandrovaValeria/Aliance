@@ -14,6 +14,11 @@
 
 <body>
   <nav class="navbar">
+    <a href="#" class="mobile-menu-toggle">
+      <span class="mobile-menu-line"></span>
+      <span class="mobile-menu-line"></span>
+      <span class="mobile-menu-line"></span>
+    </a>
     <a href="#" class="header-logo">
       <svg class="navbar-logo">
         <use href="img/sprite.svg#logo-light"></use>
@@ -38,7 +43,12 @@
     </div>
     <!-- /.header-phone -->
 
-    <button class="button header-button">Получить консультацию</button>
+    <button class="button header-button">
+      <svg class="button-icon" width="24" height="24">
+        <use href="img/sprite.svg#phone"></use>
+      </svg>
+      <span class="button-text">Получить консультацию</span>
+    </button>
     <!-- /.button header-button -->
   </nav>
   <!-- /.navbar -->
