@@ -329,6 +329,10 @@ section {
   html {
     font-size: 12px;
   }
+  .header-button {
+    padding-right: 2.7rem;
+    padding-left: 2.7rem;
+  }
 }
 
 @media (max-width: 1200px) {
