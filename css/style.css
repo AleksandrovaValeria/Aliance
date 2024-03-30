@@ -10,12 +10,16 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
 
 .content {
-  max-width: 1440px;
+  max-width: 90rem;
   width: 100%;
   margin: auto;
 }
@@ -24,19 +28,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 60px;
+  padding: 1.5625rem 3.75rem;
   background-color: rgb(92, 142, 230);
   border: none;
   color: #fff;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 0.35px;
   cursor: pointer;
 }
 
 .separator {
-  max-width: 150px;
+  max-width: 9.375rem;
   height: 2px;
   background-color: rgb(92, 142, 230);
 }
@@ -44,7 +48,7 @@ body {
 /* Header */
 header {
   min-height: 100vh;
-  padding-top: 94px;
+  padding-top: 5.875rem;
 }
 
 .header-image {
@@ -87,16 +91,19 @@ header {
 
 .navbar-light .header-logo {
   border-color: rgb(235, 235, 240);
+  padding-top: .9375rem;
+  padding-bottom: .9375rem;
 }
 
 .header-logo {
-  padding: 23px 50px;
+  padding: 1.4375rem 3.125rem;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   transition: padding 0.2s;
 }
 
-.navbar-light .header-logo {
-  padding: 15px 50px;
+.navbar-logo {
+  width: 8.75rem;
+  height: 2.75rem;
 }
 
 .header-nav {
@@ -105,16 +112,16 @@ header {
   flex-basis: 100%;
   list-style: none;
   padding: 0;
-  margin: 0 50px;
+  margin: 0 1.25rem 0 3.125rem;
 }
 
-.header-nav-item {
-  margin-right: 50px;
+.header-nav-item:not(:last-child) {
+  margin-right: 3.125rem;
 }
 
 .header-nav-link {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.49px;
   color: inherit;
   text-decoration: none;
@@ -125,7 +132,7 @@ header {
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
 
 .header-phone-link {
@@ -136,39 +143,40 @@ header {
 .header-button {
   flex-shrink: 0;
   align-self: stretch;
-  padding: 34px 51px;
+  padding-right: 3.1875rem;
+  padding-left: 3.1875rem;
   letter-spacing: 0.45px;
 }
 
 .header-content {
   position: relative;
-  padding-top: 150px;
+  padding-top: 9.375rem;
   color: #ffffff;
 }
 
 .header-title {
-  max-width: 1080px;
+  max-width: 67.5rem;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 80px;
+  font-size: 5rem;
   line-height: 1.2;
   font-weight: 400;
-  margin: 20px 0 40px;
+  margin: 1.25rem 0 2.5rem;
 }
 
 .header-text {
-  max-width: 720px;
+  max-width: 45rem;
   font-weight: 300;    
   letter-spacing: 0.45px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .header-features {
   position: relative;
   display: flex;
   padding: 0;
-  margin: 100px 0 0;
+  margin: 6.25rem 0 0;
   color: #fff;
   list-style: none;
 }
@@ -184,20 +192,20 @@ header {
 }
 
 .header-feature-icon {
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .header-feature-text {
   margin: 0;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 0.45px;
 }
 
 /* Section */
 section {
-  padding-top: 150px;
+  padding-top: 9.375rem;
 }
 
 .section-light {
@@ -207,10 +215,10 @@ section {
 .section-title {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 1.2;
   color: rgb(41, 45, 51);
-  margin: 23px 0 50px;
+  margin: 1.4375rem 0 3.125rem;
 }
 
 .steps {
@@ -222,18 +230,18 @@ section {
 }
 
 .step-item {
-  max-width: 330px;
-  padding-right: 30px;
+  max-width: 20.625rem;
+  padding-right: 1.875rem;
 }
 
 .step-num {
   display: flex;
   align-items: center;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1.2;
   color: rgb(92, 142, 230);
-  margin-bottom: 35px;
+  margin-bottom: 2.1875rem;
 }
 
 .step-num::after {
@@ -247,17 +255,17 @@ section {
 
 .step-item-title {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.6;
   letter-spacing: 0.2px;
   color: rgb(41, 45, 51);
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
 }
 
 .step-item-text {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.65;
   letter-spacing: 0.1px;
   color: rgb(130, 138, 153);
@@ -266,9 +274,9 @@ section {
 .step-link {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 0.3px;
   color: rgb(92, 142, 230);
@@ -281,5 +289,30 @@ section {
   height: 1px;
   background-color: rgb(92, 142, 230);
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 1.25rem;
+}
+
+@media(max-width:1730px) {
+  html {
+    font-size: 14px;
+  }
+  .header-phone {
+    margin-right: 1.5625rem;
+  }
+  .header-nav {
+    margin: 0 1.25rem;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 1.5625rem;
+  }
+  .header-logo {
+    padding-right: 1.5625rem;
+    padding-left: 1.5625rem;
+  }
+}
+
+@media(max-width:1350px) {
+  html {
+    font-size: 12px;
+  }
 }
