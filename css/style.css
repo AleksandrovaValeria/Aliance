@@ -392,7 +392,6 @@ section {
     background-color: rgb(41, 45, 51);
   }
   .mobile-menu {
-    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -403,6 +402,9 @@ section {
 
     background-color: rgb(250, 251, 252);
     padding-top: 80px;
+  }
+  .mobile-menu.is-open {
+    display: block;
   }
   .mobile-menu-nav {
     margin: 0;
