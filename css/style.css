@@ -91,8 +91,8 @@ header {
 
 .navbar-light .header-logo {
   border-color: rgb(235, 235, 240);
-  padding-top: .9375rem;
-  padding-bottom: .9375rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
 }
 
 .header-logo {
@@ -165,7 +165,7 @@ header {
 
 .header-text {
   max-width: 45rem;
-  font-weight: 300;    
+  font-weight: 300;
   letter-spacing: 0.45px;
   font-size: 1rem;
   line-height: 1.6;
@@ -260,7 +260,7 @@ section {
   letter-spacing: 0.2px;
   color: rgb(41, 45, 51);
   margin-top: 0;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 .step-item-text {
@@ -292,7 +292,7 @@ section {
   margin-right: 1.25rem;
 }
 
-@media(max-width:1730px) {
+@media (max-width: 1730px) {
   html {
     font-size: 14px;
   }
@@ -311,13 +311,13 @@ section {
   }
 }
 
-@media(max-width:1350px) {
+@media (max-width: 1350px) {
   html {
     font-size: 12px;
   }
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
   .content {
     max-width: 80rem;
   }
