@@ -86,6 +86,7 @@ header {
 
 .navbar-light {
   background-color: rgb(250, 251, 252);
+  border-color: rgb(235, 235, 240);
   color: rgb(41, 45, 51);
 }
 
@@ -383,17 +384,31 @@ section {
     padding: 2rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
+  .navbar-light .mobile-menu-toggle {
+    border-color: rgb(235, 235, 240);
+  }
   .mobile-menu-line {
     background-color: #fff;
     width: 24px;
     height: 1px;
     margin-bottom: 7px;
+    transition: transform 0.2s linear;
   }
   .mobile-menu-line:nth-child(2) {
     width: 18px;
+    transition: opacity 0.2s linear;
   }
   .navbar-light .mobile-menu-line {
     background-color: rgb(41, 45, 51);
+  }
+  .btn-close .mobile-menu-line:nth-child(2) {
+   opacity: 0;
+  }
+  .btn-close .mobile-menu-line:nth-child(1) {
+    transform: rotate(45deg) translateY(5px) translateX(6.5px);
+  }
+  .btn-close .mobile-menu-line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-5px) translateX(6.5px);
   }
   .mobile-menu {
     position: fixed;
