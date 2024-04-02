@@ -421,19 +421,29 @@ section {
   .header-logo {
     flex-grow: 1;
     text-align: center;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: padding 0.2s;
+  }
+  .navbar-light .header-logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .navbar-logo {
-    width: 10rem;
-    height: 3.2rem;
+    width: 120px;
+    height: 38px;
   }
   .header-button .button-text {
     display: none;
   }
   .header-button {
     width: 80px;
-    padding: 2rem;
+    padding: 22px;
+    transition: padding 0.2s;
+  }
+  .navbar-light .header-button {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .header-button .button-icon {
     display: block;
@@ -442,19 +452,24 @@ section {
   .mobile-menu-toggle {
     display: flex;
     flex-direction: column;
+    padding: 22px;
     width: 80px;
-    padding: 2rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
+    transition: padding 0.2s, border-color 0.2s;
   }
   .navbar-light .mobile-menu-toggle {
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-color: rgb(235, 235, 240);
   }
   .mobile-menu-line {
     background-color: #fff;
     width: 24px;
     height: 1px;
-    margin-bottom: 7px;
     transition: transform 0.2s linear;
+  }
+  .mobile-menu-line:not(:last-child) {
+    margin-bottom: 7px;
   }
   .mobile-menu-line:nth-child(2) {
     width: 18px;
@@ -584,7 +599,7 @@ section {
     max-width: 100%;
     padding: 0 15px;
   }
-  section  {
+  section {
     padding-top: 100px;
   }
   .header-text {
