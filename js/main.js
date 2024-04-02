@@ -41,7 +41,7 @@ mobile_menu_btn.addEventListener("click", (e) => {
 });
 
 // Slider features
-const swiper = new Swiper('.features-slider', {
+const swiperFeature = new Swiper('.features-slider', {
   slidesPerView: "auto",
   
   // Navigation arrows
@@ -62,6 +62,29 @@ const swiper = new Swiper('.features-slider', {
     },
     1200: {
       slidesPerView: 5,
+    }
+  }
+});
+
+// Slider step
+const swiperStep = new Swiper('.steps-slider', {
+  slidesPerView: "auto",
+  
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: '.slider-button-next',
+  //   prevEl: '.slider-button-prev',
+  // },
+
+  breakpoints: {
+    530: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 4,
     }
   }
 });
