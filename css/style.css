@@ -18,6 +18,18 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+h2 {
+  font-size: 3.75rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.6;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.6;
@@ -237,24 +249,17 @@ header {
 
 .slider-buttons button svg {
   fill: #ffffff;
-  transition: fill 0.2s;
+  transition: opacity 0.2s;
 }
 
 button.swiper-button-disabled svg {
-  fill: #7e7e7e;
-}
-
-.step-button {
-  justify-content: end;
+  opacity: 0.4;
 }
 
 .step-button button {
   max-width: 60px;
   border: none;
   background-color: rgb(92, 142, 230);
-}
-.step-button .swiper-button-disabled svg {
-  fill: #2a2a2a;
 }
 
 /* Mobile menu */
@@ -275,11 +280,8 @@ section {
 
 .section-title {
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-size: 3.75rem;
-  line-height: 1.2;
   color: rgb(41, 45, 51);
-  margin: 1.4375rem 0 3.125rem;
+  margin: 1.875rem 0 3.125rem;
 }
 
 .steps {
@@ -313,18 +315,14 @@ section {
 }
 
 .step-item-title {
-  font-weight: 400;
-  font-size: 1.75rem;
-  line-height: 1.6;
   letter-spacing: 0.2px;
   color: rgb(41, 45, 51);
   margin-top: 0;
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .step-item-text {
   margin: 0;
-  font-size: 1rem;
   line-height: 1.65;
   letter-spacing: 0.1px;
   color: rgb(130, 138, 153);
@@ -334,7 +332,7 @@ section {
 .step-link {
   display: flex;
   align-items: center;
-  margin-top: 1.25rem;
+  margin-top: 20px;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.6;
@@ -349,7 +347,7 @@ section {
   height: 1px;
   background-color: rgb(92, 142, 230);
   display: inline-block;
-  margin-right: 1.25rem;
+  margin-right: 20px;
 }
 
 @media (max-width: 1760px) {
@@ -381,6 +379,12 @@ section {
   p {
     font-size: 14px;
   }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 20px;
+  }
   .header-button {
     padding-right: 2.7rem;
     padding-left: 2.7rem;
@@ -400,6 +404,10 @@ section {
   }
   .slider-buttons {
     display: flex;
+  }
+  .step-button {
+    justify-content: end;
+    margin-top: 20px;
   }
 }
 
@@ -576,6 +584,9 @@ section {
     max-width: 100%;
     padding: 0 15px;
   }
+  section  {
+    padding-top: 100px;
+  }
   .header-text {
     margin-bottom: 2.5rem;
   }
@@ -590,10 +601,21 @@ section {
     margin: 0 -15px;
   }
   /* Step */
+  .section-title {
+    margin: 20px 0 30px;
+  }
   .step-item {
     max-width: 300px;
   }
+  .step-num {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
   .step-item-text {
     padding-right: 0;
+  }
+  .step-link {
+    margin-top: 25.5px;
+    font-size: 14px;
   }
 }
