@@ -244,6 +244,19 @@ button.swiper-button-disabled svg {
   fill: #7e7e7e;
 }
 
+.step-button {
+  justify-content: end;
+}
+
+.step-button button {
+  max-width: 60px;
+  border: none;
+  background-color: rgb(92, 142, 230);
+}
+.step-button .swiper-button-disabled svg {
+  fill: #2a2a2a;
+}
+
 /* Mobile menu */
 .mobile-menu-toggle,
 .mobile-menu {
@@ -253,6 +266,7 @@ button.swiper-button-disabled svg {
 /* Section */
 section {
   padding-top: 9.375rem;
+  padding-bottom: 9.375rem;
 }
 
 .section-light {
@@ -270,15 +284,13 @@ section {
 
 .steps {
   display: flex;
-  gap: 30px;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .step-item {
-  max-width: 20.625rem;
-  padding-right: 1.875rem;
+  max-width: 330px;
 }
 
 .step-num {
@@ -316,6 +328,7 @@ section {
   line-height: 1.65;
   letter-spacing: 0.1px;
   color: rgb(130, 138, 153);
+  padding-right: 1.875rem;
 }
 
 .step-link {
@@ -573,7 +586,14 @@ section {
     max-width: 250px;
     padding: 20px 30px;
   }
-  .slider-buttons {
+  .features-buttons {
     margin: 0 -15px;
+  }
+  /* Step */
+  .step-item {
+    max-width: 300px;
+  }
+  .step-item-text {
+    padding-right: 0;
   }
 }

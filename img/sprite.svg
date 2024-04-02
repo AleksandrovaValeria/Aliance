@@ -109,4 +109,21 @@
     <rect id="arrow" width="36.000000" height="24.000000" fill-opacity="0"/>
     <path id="Vector" d="M10.16 4.68L10.86 5.39L4.41 11.84L33 11.84L32.99 12.84L4.42 12.84L10.86 19.29L10.16 20L3 12.84L2.99 12.84L2.99 12.83L2.5 12.34L10.16 4.68Z" fill-opacity="1.000000" fill-rule="evenodd"/>
   </symbol>
+  <symbol viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="step-arrow-next">
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <rect id="arrow" width="30.000000" height="20.000000" transform="translate(30.000000 20.000000) rotate(180.000000)" fill-opacity="0"/>
+    <path id="Vector" d="M21.53 16.09L20.94 15.5L26.32 10.12L2.5 10.12L2.5 9.29L26.31 9.29L20.94 3.92L21.53 3.33L27.49 9.29L27.5 9.29L27.5 9.3L27.91 9.71L21.53 16.09Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+  </symbol>
+  <symbol viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="step-arrow-prev">
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <rect id="arrow" width="30.000000" height="20.000000" fill-opacity="0"/>
+    <path id="Vector" d="M8.46 3.9L9.05 4.49L3.67 9.87L27.5 9.87L27.49 10.7L3.68 10.7L9.05 16.07L8.46 16.66L2.5 10.7L2.49 10.7L2.49 10.69L2.08 10.28L8.46 3.9Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+  </symbol>
+
 </svg>

@@ -46,8 +46,8 @@ const swiperFeature = new Swiper('.features-slider', {
   
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button-next',
-    prevEl: '.slider-button-prev',
+    nextEl: '.features-slider-button-next',
+    prevEl: '.features-slider-button-prev',
   },
 
   breakpoints: {
@@ -69,21 +69,22 @@ const swiperFeature = new Swiper('.features-slider', {
 // Slider step
 const swiperStep = new Swiper('.steps-slider', {
   slidesPerView: "auto",
+  spaceBetween: 30,
   
   // Navigation arrows
-  // navigation: {
-  //   nextEl: '.slider-button-next',
-  //   prevEl: '.slider-button-prev',
-  // },
+  navigation: {
+    nextEl: '.step-slider-button-next',
+    prevEl: '.step-slider-button-prev',
+  },
 
   breakpoints: {
-    530: {
+    576: {
       slidesPerView: 2,
     },
-    768: {
+    900: {
       slidesPerView: 3,
     },
-    900: {
+    1200: {
       slidesPerView: 4,
     }
   }
