@@ -17,7 +17,6 @@ const mobile_menu_btn = document.querySelector(".mobile-menu-toggle");
 const mobile_menu_block = document.querySelector(".mobile-menu");
 
 const openMenu = () => {
-  console.log("open-menu");
   mobile_menu_block.classList.add("is-open");
   mobile_menu_btn.classList.add("btn-close");
   lightModeOn();
@@ -25,7 +24,6 @@ const openMenu = () => {
 };
 
 const closeMenu = () => {
-  console.log("close-menu");
   mobile_menu_block.classList.remove("is-open");
   mobile_menu_btn.classList.remove("btn-close");
   lightModeOff();
