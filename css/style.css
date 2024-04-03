@@ -638,11 +638,11 @@ section {
   .features-buttons {
     margin: 0 -15px;
   }
-  .slider-buttons button {
+  .features-buttons button {
     border-right: none;
     border-left: none;
   }
-  .slider-buttons button:last-child {
+  .features-buttons button:last-child {
     border-left: 1px solid rgba(235, 235, 240, 0.2);
   }
   /* Step */
