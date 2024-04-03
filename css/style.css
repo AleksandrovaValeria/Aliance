@@ -123,6 +123,22 @@ header {
   height: 2.75rem;
 }
 
+.header-logo .logo-light {
+  display: block;
+}
+
+.header-logo .logo-dark {
+  display: none;
+}
+
+.navbar-light .header-logo .logo-light {
+  display: none;
+}
+
+.navbar-light .header-logo .logo-dark {
+  display: block;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
