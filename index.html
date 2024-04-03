@@ -13,7 +13,90 @@
 </head>
 
 <body>
+  <div class="mobile-menu">
+    <ul class="mobile-menu-nav">
+      <li class="mobile-menu-item">
+        <a href="#" class="mobile-menu-link">О компании</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#" class="mobile-menu-link">Контрактное производство</a>
+        <ul class="mobile-submenu">
+          <li class="mobile-submenu-item">
+            <a href="#" class="mobile-menu-submenu-link">Автомобильная химия</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a href="#" class="mobile-menu-submenu-link">Бытовая химия</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a href="#" class="mobile-menu-submenu-link">Дезинфицирующие средства</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a href="#" class="mobile-menu-submenu-link">Пищевые аэрозоли</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a href="#" class="mobile-menu-submenu-link">Косметическая продукция</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a href="#" class="mobile-menu-submenu-link">Краски аэрозольные</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#" class="mobile-menu-link">Собственные марки</a>
+        <ul class="mobile-submenu">
+          <li class="mobile-submenu-item">
+            <a href="#" class="mobile-menu-submenu-link">Автохимия AG-Tech</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a href="#" class="mobile-menu-submenu-link">Автохимия AP</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#" class="mobile-menu-link">Новости</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#" class="mobile-menu-link">Контакты</a>
+      </li>
+    </ul>
+    <!-- /.mobile-menu-nav -->
+    <div class="mobile-menu-contact">
+      <a href="tel:+74996861014" class="mobile-menu-phone">+7 (499) 686-10-14</a>
+      <div class="mobile-menu-contact-info">
+        <svg class="mobile-menu-contact-icon" width="24" height="24">
+          <use href="img/sprite.svg#location"></use>
+        </svg>
+        <address class="mobile-menu-contact-text">г. Москва, Холодильный пер. 4к1с8</address>
+      </div>
+      <div class="mobile-menu-contact-info">
+        <svg class="mobile-menu-contact-icon" width="24" height="24">
+          <use href="img/sprite.svg#mail"></use>
+        </svg>
+        <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-menu-contact-text">a.dragunov@tdaliance.ru</a>
+      </div>
+      <div class="mobile-menu-social">
+        <a href="#" class="mobile-menu-social-icon">
+          <svg width="24" height="24">
+            <use href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="#" class="mobile-menu-social-icon">
+          <svg width="24" height="24">
+            <use href="img/sprite.svg#inst"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- /.mobile-menu -->
+
   <nav class="navbar">
+    <a href="#" class="mobile-menu-toggle">
+      <span class="mobile-menu-line"></span>
+      <span class="mobile-menu-line"></span>
+      <span class="mobile-menu-line"></span>
+    </a>
+
     <a href="#" class="header-logo">
       <svg class="navbar-logo">
         <use href="img/sprite.svg#logo-light"></use>
@@ -38,7 +121,12 @@
     </div>
     <!-- /.header-phone -->
 
-    <button class="button header-button">Получить консультацию</button>
+    <button class="button header-button">
+      <svg class="button-icon" width="24" height="24">
+        <use href="img/sprite.svg#phone"></use>
+      </svg>
+      <span class="button-text">Получить консультацию</span>
+    </button>
     <!-- /.button header-button -->
   </nav>
   <!-- /.navbar -->

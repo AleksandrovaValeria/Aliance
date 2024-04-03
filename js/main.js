@@ -9,3 +9,11 @@ window.addEventListener("scroll", () => {
     navbar_logo.href.baseVal = "img/sprite.svg#logo-light";
   }
 });
+
+// Mobile menu
+const mobile_menu_btn = document.querySelector(".mobile-menu-toggle");
+const mobile_menu_block = document.querySelector(".mobile-menu");
+mobile_menu_btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  mobile_menu_block.classList.toggle("is-open")
+});

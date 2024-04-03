@@ -91,8 +91,8 @@ header {
 
 .navbar-light .header-logo {
   border-color: rgb(235, 235, 240);
-  padding-top: .9375rem;
-  padding-bottom: .9375rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
 }
 
 .header-logo {
@@ -135,6 +135,10 @@ header {
   margin-right: 3.125rem;
 }
 
+.phone-icon {
+  fill: #5c8ee6;
+}
+
 .header-phone-link {
   color: inherit;
   text-decoration: none;
@@ -146,6 +150,10 @@ header {
   padding-right: 3.1875rem;
   padding-left: 3.1875rem;
   letter-spacing: 0.45px;
+}
+
+.header-button .button-icon {
+  display: none;
 }
 
 .header-content {
@@ -165,7 +173,7 @@ header {
 
 .header-text {
   max-width: 45rem;
-  font-weight: 300;    
+  font-weight: 300;
   letter-spacing: 0.45px;
   font-size: 1rem;
   line-height: 1.6;
@@ -201,6 +209,12 @@ header {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 0.45px;
+}
+
+/* Mobile menu */
+.mobile-menu-toggle,
+.mobile-menu {
+  display: none;
 }
 
 /* Section */
@@ -260,7 +274,7 @@ section {
   letter-spacing: 0.2px;
   color: rgb(41, 45, 51);
   margin-top: 0;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 .step-item-text {
@@ -292,7 +306,7 @@ section {
   margin-right: 1.25rem;
 }
 
-@media(max-width:1730px) {
+@media (max-width: 1730px) {
   html {
     font-size: 14px;
   }
@@ -311,8 +325,157 @@ section {
   }
 }
 
-@media(max-width:1350px) {
+@media (max-width: 1350px) {
   html {
     font-size: 12px;
+  }
+  .header-button {
+    padding-right: 2.7rem;
+    padding-left: 2.7rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    max-width: 80rem;
+  }
+  .navbar-logo {
+    width: 7rem;
+    height: 2rem;
+  }
+  .header-phone {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    max-width: 70rem;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-logo {
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+  .navbar-logo {
+    width: 10rem;
+    height: 3.2rem;
+  }
+  .header-button .button-text {
+    display: none;
+  }
+  .header-button {
+    width: 80px;
+    padding: 2rem;
+  }
+  .header-button .button-icon {
+    display: block;
+    fill: #fff;
+  }
+  .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    padding: 2rem;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+  }
+  .mobile-menu-line {
+    background-color: #fff;
+    width: 24px;
+    height: 1px;
+    margin-bottom: 7px;
+  }
+  .mobile-menu-line:nth-child(2) {
+    width: 18px;
+  }
+  .navbar-light .mobile-menu-line {
+    background-color: rgb(41, 45, 51);
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    overflow-y: auto;
+
+    background-color: rgb(250, 251, 252);
+    padding-top: 80px;
+  }
+  .mobile-menu.is-open {
+    display: block;
+  }
+  .mobile-menu-nav {
+    margin: 0;
+    padding: 1.5rem;
+    list-style: none;
+    border-bottom: 1px solid rgb(235, 235, 240);
+  }
+  .mobile-menu-item:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .mobile-menu-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(41, 45, 51);
+    text-decoration: none;
+  }
+  .mobile-submenu {
+    margin-top: 1.7rem;
+    padding-left: 1.7rem;
+    list-style: none;
+  }
+  .mobile-submenu-item {
+    margin-bottom: 10px;
+  }
+  .mobile-menu-submenu-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(130, 138, 153);
+    text-decoration: none;
+  }
+  .mobile-menu-contact {
+    padding: 15px;
+    padding-top: 30px;
+  }
+  .mobile-menu-phone {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgb(41, 45, 51);
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  .mobile-menu-contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .mobile-menu-contact-icon {
+    margin-right: 10px;
+  }
+  .mobile-menu-contact-text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(41, 45, 51);
+    text-decoration: none;
+  }
+  .mobile-menu-social {
+    margin-top: 20px;
+  }
+  .mobile-menu-social-icon {
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
   }
 }
