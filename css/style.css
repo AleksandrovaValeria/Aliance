@@ -513,14 +513,15 @@ section {
     overflow-y: auto;
 
     background-color: rgb(250, 251, 252);
-    padding-top: 80px;
+    padding-top: 52px;
   }
   .mobile-menu.is-open {
     display: block;
   }
   .mobile-menu-nav {
     margin: 0;
-    padding: 1.5rem;
+    padding: 15px;
+    padding-top: 30px;
     list-style: none;
     border-bottom: 1px solid rgb(235, 235, 240);
   }
