@@ -326,6 +326,9 @@ section {
   color: rgb(41, 45, 51);
   margin: 1.875rem 0 3.125rem;
 }
+.section-title.mobile {
+  display: none;
+}
 
 .steps-slider {
   padding: 0 15px;
