@@ -620,7 +620,7 @@ section {
   .mobile-menu-toggle {
     display: flex;
     flex-direction: column;
-    padding: 24px 28px 22px;
+    padding: 26px 22px 22px 30px;
     width: 80px;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
     transition: padding 0.2s, border-color 0.2s;
@@ -632,15 +632,15 @@ section {
   }
   .mobile-menu-line {
     background-color: #fff;
-    width: 24px;
+    width: 20px;
     height: 1px;
     transition: transform 0.2s linear;
   }
   .mobile-menu-line:not(:last-child) {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
   }
   .mobile-menu-line:nth-child(2) {
-    width: 18px;
+    width: 15px;
     transition: opacity 0.2s linear;
   }
   .navbar-light .mobile-menu-line {
