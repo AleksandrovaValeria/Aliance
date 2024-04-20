@@ -326,7 +326,9 @@ section {
   color: rgb(41, 45, 51);
   margin: 1.6rem 0 3.125rem;
 }
-.section-title.mobile {
+
+.section-title.mobile,
+.btn-link.mobile {
   display: none;
 }
 
@@ -375,7 +377,7 @@ section {
   padding-right: 1.875rem;
 }
 
-.step-link {
+.btn-link {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -387,7 +389,7 @@ section {
   text-decoration: none;
 }
 
-.step-link::before {
+.btn-link::before {
   content: "";
   width: 40px;
   height: 1px;
@@ -397,7 +399,7 @@ section {
   transition: width 0.2s;
 }
 
-.step-link:hover::before {
+.btn-link:hover::before {
   width: 60px;
 }
 
@@ -518,6 +520,40 @@ section {
   padding-right: 30px;
 }
 
+/* Founder */
+.founder {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 41.25rem;
+  height: 100%;
+}
+
+.founder-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 52.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-content-wrapper {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.founder-content {
+  max-width: 45rem;
+}
+
+.founder .section-title {
+  max-width: 480px;
+  margin-bottom: 1.25rem;
+}
+
 @media (max-width: 1760px) {
   .header-phone {
     margin-right: 1.5625rem;
@@ -531,6 +567,9 @@ section {
   .header-logo {
     padding-right: 1.5625rem;
     padding-left: 1.5625rem;
+  }
+  .founder-photo {
+    width: 45%;
   }
 }
 
@@ -599,6 +638,10 @@ section {
   .brand-card-image {
     width: 100px;
     height: 100px;
+  }
+  /* founder */
+  .founder-content {
+    max-width: 35rem;
   }
 }
 
@@ -800,6 +843,18 @@ section {
   .production-card-text {
     padding-right: 0;
   }
+  /* founder */
+  .founder {
+    justify-content: center;
+  }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .founder-content-wrapper {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -856,11 +911,15 @@ section {
   .steps-slider {
     padding: 0 15px;
   }
-  .section-title.table {
+  .section-title.table,
+  .btn-link.table {
     display: none;
   }
   .section-title.mobile {
     display: block;
+  }
+  .btn-link.mobile {
+    display: flex;
   }
   .section-title {
     margin: 17px 0 32px;
@@ -879,7 +938,7 @@ section {
   .step-item-text {
     padding-right: 0;
   }
-  .step-link {
+  .btn-link {
     margin-top: 25px;
     font-size: 14px;
   }
@@ -915,5 +974,12 @@ section {
   }
   .own-brand-card-title {
     line-height: 1.3;
+  }
+  /* founder */
+  .founder .section-title {
+    margin-bottom: 10px;
+  }
+  .founder .btn-link {
+    margin-top: 20px;
   }
 }
