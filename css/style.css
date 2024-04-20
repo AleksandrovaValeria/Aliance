@@ -709,6 +709,121 @@ section {
   justify-content: end;
 }
 
+/* CTA */
+.cta {
+  position: relative;
+  background-color: rgb(240, 242, 245);
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.cta-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 45rem;
+  width: 100%;
+  height: auto;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.cta-content {
+  max-width: 52.5rem;
+  width: 60%;
+}
+
+.cta .section-title {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.cta-from-text {
+  margin: 0;
+  margin-bottom: 3.125rem;
+  max-width: 40rem;
+  color: rgb(130, 138, 153);
+}
+
+.input-group-wrapper {
+  display: flex;
+  gap: 20px 30px;
+  margin-bottom: 1.875rem;
+}
+
+.input-group {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.input-group label {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.95rem;
+  font-size: 1rem;
+  padding: 0 0.625rem;
+  color: rgb(130, 138, 153);
+  background-color: rgb(240, 242, 245);
+  cursor: text;
+  transition: all 0.2s;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1.25rem 1.875rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: rgb(41, 45, 51);
+  border: 1px solid rgb(228, 228, 235);
+  background-color: rgb(240, 242, 245);
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: rgb(92, 142, 230);
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown):not(:focus) ~ label {
+  top: -0.5rem;
+  left: 1.25rem;
+  font-size: 10px;
+}
+
+.cta-form-footer {
+  display: flex;
+  align-items: center;
+}
+
+.cta-form-button {
+  flex-shrink: 0;
+  font-size: 14px;
+  margin-right: 30px;
+  padding: 1.25rem 3.125rem;
+}
+
+.cta-form-notify {
+  display: flex;
+}
+
+.cta-form-notify svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+
+.cta-form-notify p {
+  margin: 0;
+  font-size: 12px;
+  max-width: 400px;
+  color: rgb(130, 138, 153);
+}
+
 @media (max-width: 1760px) {
   .header-phone {
     margin-right: 1.5625rem;
@@ -725,6 +840,9 @@ section {
   }
   .founder-photo {
     width: 45%;
+  }
+  .cta-image {
+    width: 43%;
   }
 }
 
@@ -756,6 +874,10 @@ section {
   .header-button {
     padding-right: 2.7rem;
     padding-left: 2.7rem;
+  }
+  .cta {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 }
 
@@ -809,6 +931,21 @@ section {
   }
   .partner-logo-item img {
     max-width: 55px;
+  }
+  /* cta */
+  .cta-image {
+    left: -10%;
+    width: 55%;
+    max-width: 65rem;
+  }
+  .cta-content {
+    width: 50%;
+  }
+  .input-group-wrapper {
+    flex-wrap: wrap;
+  }
+  .input-group {
+    flex-basis: 100%;
   }
 }
 
@@ -1040,6 +1177,15 @@ section {
   .partners-content {
     margin-right: 0;
     margin-bottom: 30px;
+  } /* cta */
+  .cta-image {
+    display: none;
+  }
+  .cta-wrapper {
+    justify-content: start;
+  }
+  .cta-content {
+    width: 100%;
   }
 }
 
@@ -1209,5 +1355,23 @@ section {
   }
   .blog-slider .slider-buttons {
     max-width: 120px;
+  }
+  /* cta */
+  .cta {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .input-group-wrapper {
+    margin-bottom: 10px;
+  }
+  .cta-form-footer {
+    flex-direction: column;
+    align-items: start;
+  }
+  .cta-form-button {
+    margin-right: 0;
+    margin-bottom: 30px;
+    flex-shrink: 1;
+    width: 100%;
   }
 }
