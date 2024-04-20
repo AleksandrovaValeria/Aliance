@@ -68,8 +68,8 @@ const swiperStep = new Swiper('.steps-slider', {
   
   // Navigation arrows
   navigation: {
-    nextEl: '.step-slider-button-next',
-    prevEl: '.step-slider-button-prev',
+    nextEl: '.step-button-next',
+    prevEl: '.step-button-prev',
   },
 
   breakpoints: {
@@ -91,10 +91,10 @@ const swiperBlog = new Swiper('.blog-slider', {
   spaceBetween: 30,
   
   // Navigation arrows
-  // navigation: {
-  //   nextEl: '.step-slider-button-next',
-  //   prevEl: '.step-slider-button-prev',
-  // },
+  navigation: {
+    nextEl: '.blog-button-next',
+    prevEl: '.blog-button-prev',
+  },
 
   breakpoints: {
     900: {
