@@ -84,3 +84,21 @@ const swiperStep = new Swiper('.steps-slider', {
     }
   }
 });
+
+// Slider blog
+const swiperBlog = new Swiper('.blog-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: '.step-slider-button-next',
+  //   prevEl: '.step-slider-button-prev',
+  // },
+
+  breakpoints: {
+    900: {
+      slidesPerView: 2,
+    }
+  }
+});
