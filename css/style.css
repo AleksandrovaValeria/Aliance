@@ -884,6 +884,7 @@ section {
 .cta {
   position: relative;
   background-color: rgb(240, 242, 245);
+  margin-top: 4.625rem;
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
 }
@@ -909,7 +910,7 @@ section {
 
 .cta .section-title {
   margin-top: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .cta-from-text {
@@ -917,6 +918,8 @@ section {
   margin-bottom: 3.125rem;
   max-width: 40rem;
   color: rgb(130, 138, 153);
+  word-spacing: -1px;
+  letter-spacing: 0.2px;
 }
 
 .input-group-wrapper {
@@ -935,7 +938,6 @@ section {
   top: 1.5rem;
   left: 1.95rem;
   font-size: 1rem;
-  padding: 0 0.625rem;
   color: rgb(130, 138, 153);
   background-color: rgb(240, 242, 245);
   cursor: text;
@@ -961,9 +963,10 @@ section {
 
 .input-group input:focus ~ label,
 .input-group input:not(:placeholder-shown):not(:focus) ~ label {
-  top: -0.5rem;
+  top: -0.3rem;
   left: 1.25rem;
   font-size: 10px;
+  padding: 0 0.625rem;
 }
 
 .cta-form-footer {
@@ -976,6 +979,7 @@ section {
   font-size: 14px;
   margin-right: 30px;
   padding: 1.25rem 3.125rem;
+  letter-spacing: 0.7px;
 }
 
 .cta-form-notify {
@@ -993,6 +997,7 @@ section {
   font-size: 12px;
   max-width: 400px;
   color: rgb(130, 138, 153);
+  letter-spacing: 0.1px;
 }
 
 @media (max-width: 1760px) {
