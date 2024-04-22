@@ -748,6 +748,7 @@ section {
   display: flex;
   gap: 20px;
   margin-top: 1.7rem;
+  padding-bottom: 5px;
   justify-content: space-between;
 }
 
@@ -811,6 +812,10 @@ section {
 }
 
 /* blog */
+.blog-wrapper .section-title {
+  margin-bottom: 3.4rem;
+}
+
 .blog-card {
   display: flex;
   flex-direction: column;
@@ -848,23 +853,25 @@ section {
   font-size: 1.75rem;
   line-height: 1.6;
   color: rgb(255, 255, 255);
+  letter-spacing: 0.2px;
 }
 
 .blog-card-text {
   margin: 0;
-  font-size: 1rem;
-  line-height: 1.6;
   color: rgb(255, 255, 255);
+  letter-spacing: 0.2px;
+  word-spacing: -1px;
 }
 
 .blog-slider-footer {
-  margin-top: 1.875rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
 
 .blog-slider-footer .btn-link {
   margin-top: 0;
+  letter-spacing: 0;
 }
 
 .blog-slider .slider-buttons {
