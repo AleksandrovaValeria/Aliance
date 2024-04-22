@@ -344,9 +344,17 @@ footer .content {
 
 .footer-content {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
+}
+
+.footer-content-pd {
+  padding-bottom: 2.1rem;
+}
+
+.footer-content-center {
+  align-items: center;
 }
 
 .footer-logo {
@@ -406,13 +414,14 @@ footer .content {
 }
 
 .footer-menu-wrapper:last-child {
-  margin-left: 11.875rem;
+  margin-left: 11.7rem;
 }
 
 .footer-menu-title {
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 600;
+  letter-spacing: 0.2px;
   margin-bottom: 1.875rem;
   color: rgb(41, 45, 51);
 }
@@ -428,8 +437,8 @@ footer .content {
 }
 
 .footer-menu-list-columns-2 {
-  columns: 20rem auto;
-  min-width: 50rem;
+  columns: 15rem auto;
+  min-width: 45rem;
 }
 
 .footer-menu-item {
@@ -438,6 +447,7 @@ footer .content {
   font-weight: 400;
   color: rgb(130, 138, 153);
   margin-bottom: 0.9375rem;
+  letter-spacing: 0.2px;
 }
 
 .footer-menu-item-bold {
@@ -458,12 +468,14 @@ footer .content {
 .footer-legal {
   font-size: 12px;
   line-height: 1.6;
-  margin-right: 4.5rem;
+  margin-right: 5.2rem;
   color: rgb(130, 138, 153);
+  word-spacing: 0.3px;
 }
 
 .footer-legal:last-child {
   margin-left: auto;
+  margin-right: 0;
 }
 
 .footer-legal a {
@@ -471,7 +483,7 @@ footer .content {
 }
 
 .footer-legal .footer-made-in {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .footer-legal-content {
