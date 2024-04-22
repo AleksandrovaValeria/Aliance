@@ -340,6 +340,7 @@ footer {
 
 footer .content {
   border-bottom: 1px solid rgb(235, 235, 240);
+  margin-bottom: -1px;
 }
 
 .footer-content {
@@ -489,8 +490,8 @@ footer .content {
 .footer-legal-content {
   display: flex;
   align-items: center;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* Section */
@@ -509,7 +510,8 @@ section {
 }
 
 .section-title.mobile,
-.btn-link.mobile {
+.btn-link.mobile,
+.footer-made-in.mobile {
   display: none;
 }
 
@@ -744,6 +746,7 @@ section {
   margin: 0;
   letter-spacing: 0.2px;
   word-spacing: -0.5px;
+  margin-bottom: 1.5rem;
 }
 
 .founder-content .btn-link {
@@ -760,7 +763,7 @@ section {
 
 .partners-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 15px 20px;
   margin-top: 1.7rem;
   padding-bottom: 5px;
   justify-content: space-between;
@@ -932,8 +935,8 @@ section {
   margin-bottom: 3.125rem;
   max-width: 40rem;
   color: rgb(130, 138, 153);
-  word-spacing: -1px;
-  letter-spacing: 0.2px;
+  word-spacing: -0.5px;
+  letter-spacing: 0.1px;
 }
 
 .input-group-wrapper {
@@ -977,8 +980,8 @@ section {
 
 .input-group input:focus ~ label,
 .input-group input:not(:placeholder-shown):not(:focus) ~ label {
-  top: -0.3rem;
-  left: 1.25rem;
+  top: -5px;
+  left: 20px;
   font-size: 10px;
   padding: 0 0.625rem;
 }
@@ -1062,7 +1065,9 @@ section {
   .footer-menu-item-bold,
   .footer-menu-title,
   .footer-info address,
-  .footer-info a {
+  .footer-info a,
+  .input-group label,
+  .footer-menu-item {
     font-size: 14px;
   }
   h2 {
@@ -1073,8 +1078,8 @@ section {
   }
   /* footer */
   .footer-logo svg {
-    width: 150px;
-    height: 48px;
+    width: 160px;
+    height: 50px;
   }
   .header-button {
     padding-right: 2.7rem;
@@ -1369,7 +1374,7 @@ section {
   }
   .footer-legal {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
   .footer-legal:last-child {
     margin-left: 0;
@@ -1428,7 +1433,7 @@ section {
   }
   /* contract production */
   .production-card a {
-    min-height: 431px;
+    min-height: 430.5px;
   }
   .production-card-content {
     padding: 17px 35px 20px 28px;
@@ -1449,6 +1454,9 @@ section {
     width: 100%;
     margin-bottom: 50px;
   }
+  .founder-content {
+    padding-top: 0;
+  }
   .founder-content-wrapper {
     justify-content: center;
   }
@@ -1456,10 +1464,7 @@ section {
   .partners-wrapper {
     flex-direction: column;
   }
-  .partners-content {
-    margin-right: 0;
-    margin-bottom: 30px;
-  } /* cta */
+  /* cta */
   .cta-image {
     display: none;
   }
@@ -1524,7 +1529,10 @@ section {
     padding-bottom: 20px;
   }
   .footer-logo {
-    margin-bottom: 30px;
+    margin-bottom: 37px;
+  }
+  .footer-info-phone-block {
+    margin-bottom: 27px;
   }
   .footer-info-phone-block,
   .footer-info-block,
@@ -1538,11 +1546,27 @@ section {
   }
   .footer-menu-wrapper {
     flex-basis: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
   .footer-menu-wrapper:last-child {
     margin-left: 0;
     margin-bottom: 0;
+  }
+  .footer-menu-title {
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+  }
+  .footer-menu-item {
+    margin-bottom: 9px;
+  }
+  .footer-menu-item-bold {
+    margin-bottom: 30px;
+  }
+  .footer-social-icon:not(:last-child) {
+    margin-right: 13px;
+  }
+  .footer-legal-content {
+    padding-top: 17px;
   }
   /* features */
   .features-slider .slider-buttons {
@@ -1560,7 +1584,8 @@ section {
     padding: 0 15px;
   }
   .section-title.table,
-  .btn-link.table {
+  .btn-link.table,
+  .footer-made-in.table {
     display: none;
   }
   .section-title.mobile {
@@ -1568,6 +1593,9 @@ section {
   }
   .btn-link.mobile {
     display: flex;
+  }
+  .footer-made-in.mobile {
+    display: inline-block;
   }
   .section-title {
     margin: 17px 0 32px;
@@ -1615,7 +1643,7 @@ section {
     grid-template-areas:
       "logo title"
       "text text";
-    row-gap: 18px;
+    row-gap: 20px;
   }
   .brand-card {
     flex-basis: 100%;
@@ -1625,27 +1653,37 @@ section {
   }
   /* founder */
   .founder .section-title {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  .founder-content p {
+    line-height: 1.57;
+    margin-bottom: 1rem;
   }
   .founder .btn-link {
     margin-top: 20px;
+    letter-spacing: 0.4px;
   }
   /* partners */
   .partners-wrapper {
-    margin-top: 20px;
+    margin-top: 15px;
+    padding-bottom: 0;
+  }
+  .partners-content .section-title {
+    margin-bottom: 2.7rem;
   }
   .partners-list {
     columns: 1;
   }
   .partner-item {
     margin-bottom: 15px;
+    letter-spacing: 0.15px;
   }
   .partners-logo-list {
     flex-basis: 100%;
   }
   .partner-logo-item {
     flex-basis: 50%;
-    padding: 2.5rem;
+    padding: 30px 30px 29px;
   }
   .partner-logo-item:last-child {
     display: none;
@@ -1654,6 +1692,9 @@ section {
     max-width: 50px;
   }
   /* blog */
+  .blog-wrapper .section-title {
+    margin-bottom: 35px;
+  }
   .blog-card {
     min-height: 195px;
   }
@@ -1665,6 +1706,8 @@ section {
   }
   .blog-card-title {
     font-size: 20px;
+    margin-bottom: 0;
+    line-height: 1.2;
   }
   .blog-slider-footer {
     margin-top: 20px;
@@ -1674,11 +1717,29 @@ section {
   }
   /* cta */
   .cta {
-    padding-top: 50px;
+    margin-top: 0;
+    padding-top: 47px;
     padding-bottom: 50px;
+  }
+  .cta .section-title {
+    margin-bottom: 12px;
+  }
+  .cta-from-text {
+    margin-bottom: 30px;
   }
   .input-group-wrapper {
     margin-bottom: 10px;
+  }
+  .input-group input {
+    padding: 20px 15px;
+  }
+  .input-group label {
+    left: 2.4rem;
+    top: 1.8rem;
+  }
+  .input-group input:focus ~ label,
+  .input-group input:not(:placeholder-shown):not(:focus) ~ label {
+    left: 22px;
   }
   .cta-form-footer {
     flex-direction: column;
@@ -1687,6 +1748,8 @@ section {
   .cta-form-button {
     margin-right: 0;
     margin-bottom: 30px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     flex-shrink: 1;
     width: 100%;
   }
