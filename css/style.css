@@ -362,7 +362,7 @@ footer .content {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-right: 2.1875rem;
+  margin-right: 3rem;
 }
 
 .footer-info-block {
@@ -381,6 +381,8 @@ footer .content {
   color: rgb(41, 45, 51);
   text-decoration: none;
   font-style: normal;
+  letter-spacing: 0.1px;
+  word-spacing: -0.3px;
 }
 
 .footer-info .footer-info-phone {
@@ -400,7 +402,7 @@ footer .content {
 }
 
 .footer-social-icon:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .footer-menu-wrapper:last-child {
