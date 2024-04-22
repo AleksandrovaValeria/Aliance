@@ -710,6 +710,10 @@ section {
   object-fit: cover;
 }
 
+.founder .content {
+  margin: 0 auto;
+}
+
 .founder-content-wrapper {
   display: flex;
   justify-content: end;
@@ -718,11 +722,23 @@ section {
 
 .founder-content {
   max-width: 45rem;
+  padding-top: 2.9rem;
+}
+
+.founder-content p {
+  margin: 0;
+  letter-spacing: 0.2px;
+  word-spacing: -0.5px;
+}
+
+.founder-content .btn-link {
+  margin-top: 30px;
+  letter-spacing: 0.1px;
 }
 
 .founder .section-title {
   max-width: 480px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.6rem;
 }
 
 /* partners */
