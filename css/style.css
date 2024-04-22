@@ -714,7 +714,7 @@ section {
   flex-wrap: wrap;
   min-height: 41.25rem;
   height: 100%;
-  margin-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 .founder-photo {
@@ -1053,6 +1053,9 @@ section {
     flex-basis: 33%;
     width: 33%;
   }
+  .partner-logo-item {
+    flex-basis: 33%;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -1121,10 +1124,6 @@ section {
   }
   .footer-menu-wrapper:last-child {
     margin-left: auto;
-  }
-  .footer-menu-list-columns-2 {
-    columns: 15rem auto;
-    min-width: 40rem;
   }
   .features-slider .slider-buttons,
   .steps-slider .slider-buttons {
